@@ -11,7 +11,6 @@
 - open source beginner
 
 - rust apprentice... [doc in portuguese](https://gist.github.com/juninhopo/9655a99a6339813c138a0dd5d469993d)
-<div>
 
 ## Indications
 
