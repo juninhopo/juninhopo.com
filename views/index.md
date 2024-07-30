@@ -30,4 +30,10 @@
 
 ## Specialties ⚙️
 
-- 💻   Javascript ● Typescript ● Node.js ● EJS ● Terraform ● AWS ● Datadog ● Jest ● Serverless ● Microservices ● Git ● MySQL ● DynamoDB ● MongoDB ● Docker ● Supabase ●
+- Code Versioning: Github
+- Languages and Codes: Javascript, Typescript, Nodejs,EJS, Rust 
+- Unitary Tests: Jest
+- Infra: Terraform, AWS, Docker 
+- Database: MySQL, DynamoDB, MongoDB, Supabase
+- Observability: Datadog
+
