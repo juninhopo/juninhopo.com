@@ -1,6 +1,6 @@
 # 🌎 hi, welcome to juninhopo's home on the internet... 🌎
 
-- Hi, <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px">
+- Hi, 👋🏻
 
 - i'm backend, nothing frontend 👨🏻‍💻
 
