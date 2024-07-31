@@ -27,6 +27,7 @@
 - 💻 [GITHUB](https://github.com/juninhopo)
 - 📷 [INSTAGRAM](https://www.instagram.com/juninhopo/)
 - 🦜 [X](https://x.com/juninhopooo/)
+- 🖇️ [LINKEDIN](https://www.linkedin.com/in/darlan-junior/)
 
 ## Specialties ⚙️
 
