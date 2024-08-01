@@ -1,7 +1,5 @@
 # 🌎 hi, welcome to juninhopo's home on the internet... 🌎
 
-- Hi, 👋🏻
-
 - i'm backend, nothing frontend 👨🏻‍💻
 
 - I'm Darlan, Developer from Brazil, I'm currently working as a Software Engineer for [Stone Co.](https://www.stone.co/) at [Ton](https://ton.stone.com.br).
