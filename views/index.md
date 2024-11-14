@@ -35,5 +35,3 @@
 - **Infra:** Terraform, AWS, Docker 
 - **Database:** MySQL, DynamoDB, MongoDB, Supabase
 - **Observability:** Datadog
-
-TESTE
