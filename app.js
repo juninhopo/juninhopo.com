@@ -42,19 +42,22 @@ app.get('*', (req, res) => {
           ${isProduction ? 'Running in Production' : 'Running in Development'}
         </footer>`
 
+    // Condição para não exibir os botões na home
+    const isHomePage = req.path === '/' || req.path === '/index' || req.path === '/index.md';
+
     // Botão de Home
-    const homeButton = `
+    const homeButton = !isHomePage ? `
       <div style="position: fixed; top: 20px; right: 20px; background: #007bff; color: white; padding: 10px 20px; border-radius: 5px; cursor: pointer;">
         <a href="/" style="color: white; text-decoration: none;">Home</a>
       </div>
-    `
+    ` : '';
 
     // Botão de Voltar
-    const backButton = `
+    const backButton = !isHomePage ? `
       <div style="position: fixed; bottom: 60px; right: 20px; background: #28a745; color: white; padding: 10px 20px; border-radius: 5px; cursor: pointer;" onclick="window.history.back()">
         Voltar
       </div>
-    `
+    ` : '';
 
     // Envia o conteúdo renderizado como HTML
     res.send(`
