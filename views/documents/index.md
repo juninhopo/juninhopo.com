@@ -1,3 +1,4 @@
 # Documents
 
-- [Rust](https://juninhopo.com/docs/rust/sobre)
+- [Rust](/documents/rust/about)
+- [DOCUMENTS](/documents/index)
