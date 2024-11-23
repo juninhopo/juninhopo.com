@@ -2,9 +2,14 @@ const express = require('express')
 const fs = require('fs')
 const path = require('path')
 const MarkdownIt = require('markdown-it')
+const markdownItCheckbox = require('markdown-it-checkbox');
+
 
 const app = express()
 const md = new MarkdownIt()
+
+// Adiciona o plugin de checkboxes ao MarkdownIt
+md.use(markdownItCheckbox);
 
 // Definir variável para verificar o ambiente
 const isProduction = process.env.NODE_ENV === 'production'

@@ -9,6 +9,6 @@
 
 ## Topics
 
-- [guides & docs](/guides-&-docs/index)
-- [indications](/indications/index)
-- [projects](/projects/index)
+- [guides & docs 📚](/guides-&-docs/index)
+- [indications 🧭](/indications/index)
+- [projects 🛠️](/projects/index)

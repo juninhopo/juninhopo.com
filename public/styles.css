@@ -82,3 +82,32 @@ tr:nth-child(even) {
 table, th, td {
   border: 1px solid #444;
 }
+
+/* Estilos para os checkboxes */
+ul {
+  list-style-type: disc;  /* Adiciona bolinhas como marcadores */
+  padding-left: 20px;     /* Adiciona espaçamento à esquerda */
+}
+
+li input[type="checkbox"] {
+  margin-right: 10px;  /* Espaço entre a caixa de seleção e o texto */
+  cursor: pointer;    /* Cursor de mão ao passar sobre a caixa */
+}
+
+/* Para checkboxes marcados */
+li input[type="checkbox"]:checked {
+  background-color: #007bff;
+  border: 2px solid #007bff;
+}
+
+/* Para checkboxes desmarcados */
+li input[type="checkbox"]:not(:checked) {
+  background-color: #ccc;
+  border: 2px solid #ccc;
+}
+
+/* Estilos para os itens de lista */
+li {
+  color: #fff;   /* Cor do texto */
+  font-size: 1.1rem;  /* Ajuste o tamanho da fonte */
+}
