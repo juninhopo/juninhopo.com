@@ -42,6 +42,13 @@ app.get('*', (req, res) => {
           ${isProduction ? 'Running in Production' : 'Running in Development'}
         </footer>`
 
+    // Botão de Home
+    const homeButton = `
+      <div style="position: fixed; top: 20px; right: 20px; background: #007bff; color: white; padding: 10px 20px; border-radius: 5px; cursor: pointer;">
+        <a href="/" style="color: white; text-decoration: none;">Home</a>
+      </div>
+    `
+
     // Envia o conteúdo renderizado como HTML
     res.send(`
       <!DOCTYPE html>
@@ -52,6 +59,7 @@ app.get('*', (req, res) => {
           <link rel="icon" type="image/x-icon" href="/favicon.ico" />
         </head>
         <body>
+          ${homeButton}
           ${htmlContent}
           ${footerContent}
         </body>
