@@ -35,6 +35,13 @@ app.get('*', (req, res) => {
     // Renderiza o conteúdo Markdown e ajusta os links
     const htmlContent = adjustLinks(md.render(data))
 
+    // Lógica para decidir se o footer será exibido
+    const footerContent = isProduction 
+      ? '' 
+      : `<footer style="position: fixed; bottom: 0; left: 0; right: 0; background: #333; color: #fff; text-align: center; padding: 10px;">
+          ${isProduction ? 'Running in Production' : 'Running in Development'}
+        </footer>`
+
     // Envia o conteúdo renderizado como HTML
     res.send(`
       <!DOCTYPE html>
@@ -46,9 +53,7 @@ app.get('*', (req, res) => {
         </head>
         <body>
           ${htmlContent}
-          <footer style="position: fixed; bottom: 0; left: 0; right: 0; background: #333; color: #fff; text-align: center; padding: 10px;">
-            ${isProduction ? 'Running in Production' : 'Running in Development'}
-          </footer>
+          ${footerContent}
         </body>
       </html>
     `)
