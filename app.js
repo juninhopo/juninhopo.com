@@ -49,6 +49,13 @@ app.get('*', (req, res) => {
       </div>
     `
 
+    // Botão de Voltar
+    const backButton = `
+      <div style="position: fixed; bottom: 60px; right: 20px; background: #28a745; color: white; padding: 10px 20px; border-radius: 5px; cursor: pointer;" onclick="window.history.back()">
+        Voltar
+      </div>
+    `
+
     // Envia o conteúdo renderizado como HTML
     res.send(`
       <!DOCTYPE html>
@@ -60,6 +67,7 @@ app.get('*', (req, res) => {
         </head>
         <body>
           ${homeButton}
+          ${backButton}
           ${htmlContent}
           ${footerContent}
         </body>
