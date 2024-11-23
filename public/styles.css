@@ -24,3 +24,55 @@ li {
   color: #FFFFFF;
   text-decoration: none; 
 }
+
+/* Estilos para os blocos de código */
+pre {
+  background-color: #1e1e1e; /* Cor de fundo mais clara */
+  color: #dcdcdc; /* Cor do texto do código */
+  padding: 15px;
+  border-radius: 5px;
+  overflow-x: auto; /* Permite rolagem horizontal para códigos longos */
+}
+
+/* Estilos para código inline */
+code {
+  background-color: #2d2d2d; /* Cor de fundo mais escura para o código inline */
+  color: #f8f8f2; /* Cor do texto do código inline */
+  padding: 2px 5px;
+  border-radius: 3px;
+}
+
+/* Estilos para a tabela */
+table {
+  width: 100%;
+  border-collapse: collapse; /* Remove espaços entre as células */
+  margin: 20px 0; /* Adiciona espaço acima e abaixo da tabela */
+}
+
+/* Estilos para os cabeçalhos da tabela */
+th {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: left;
+  border-bottom: 2px solid #444;
+}
+
+/* Estilos para as células da tabela */
+td {
+  background-color: #222;
+  color: #fff;
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #444;
+}
+
+/* Estilos para linhas alternadas da tabela */
+tr:nth-child(even) {
+  background-color: #2a2a2a;
+}
+
+/* Estilos para a borda da tabela */
+table, th, td {
+  border: 1px solid #444;
+}
