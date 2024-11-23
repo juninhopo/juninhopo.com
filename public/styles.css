@@ -36,6 +36,11 @@ pre {
   font-size: 1rem; /* Tamanho do texto dentro do código */
 }
 
+p, pre {
+  white-space: pre-wrap; /* Permite quebras de linha dentro do texto */
+  word-wrap: break-word; /* Quebra de palavra caso necessário */
+} 
+
 /* Estilos para código inline */
 code {
   background-color: #2d2d2d;
