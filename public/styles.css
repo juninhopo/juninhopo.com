@@ -115,3 +115,35 @@ li {
   color: #fff;   /* Cor do texto */
   font-size: 1.1rem;  /* Ajuste o tamanho da fonte */
 }
+
+/* Breadcrumbs */
+nav.breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #161b22;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav.breadcrumbs a {
+  color: #58a6ff; /* Azul que combina com o tema */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav.breadcrumbs a:hover {
+  text-decoration: underline;
+}
+
+nav.breadcrumbs span {
+  color: #c9d1d9; /* Cor neutra para texto não clicável */
+  font-size: 1rem;
+}
+
+nav.breadcrumbs .separator {
+  color: #8b949e; /* Separador com cor discreta */
+  font-size: 1.2rem;
+}

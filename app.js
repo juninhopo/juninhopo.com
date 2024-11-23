@@ -24,7 +24,24 @@ const adjustLinks = (content) => {
   return content.replace(/https:\/\/juninhopo\.com/g, baseUrl)
 }
 
-// Rota dinâmica para renderizar qualquer arquivo Markdown
+const generateBreadcrumbs = (path) => {
+  // Remove segmentos vazios e o 'index' final do caminho
+  const segments = path.split('/').filter(segment => segment && segment !== 'index');
+
+  // Gera os breadcrumbs com links, adicionando '/index' ao final do href
+  const breadcrumbs = segments.map((segment, index) => {
+    const href = '/' + segments.slice(0, index + 1).join('/') + '/index'; // Adiciona '/index'
+    return `<a href="${href}">${decodeURIComponent(segment)}</a>`;
+  });
+
+  return `
+    <nav class="breadcrumbs">
+      <a href="/">Home</a>
+      ${breadcrumbs.length > 0 ? breadcrumbs.map(crumb => `<span class="separator">→</span>${crumb}`).join('') : ''}
+    </nav>
+  `;
+};
+
 app.get('*', (req, res) => {
   // Captura o caminho da URL e remove a barra inicial
   const relativePath = req.path.slice(1)
@@ -39,6 +56,11 @@ app.get('*', (req, res) => {
 
     // Renderiza o conteúdo Markdown e ajusta os links
     const htmlContent = adjustLinks(md.render(data))
+
+    // Gera os breadcrumbs apenas se não for a página inicial
+    const breadcrumbs = (req.path === '/' || req.path === '/index' || req.path === '/index.md') 
+      ? '' 
+      : generateBreadcrumbs(req.path);
 
     // Lógica para decidir se o footer será exibido
     const footerContent = isProduction 
@@ -74,7 +96,8 @@ app.get('*', (req, res) => {
           <link rel="icon" type="image/x-icon" href="/favicon.ico" />
         </head>
         <body>
-          ${homeButton}
+          ${breadcrumbs}
+          <!-- ${homeButton} --!>
           ${backButton}
           ${htmlContent}
           ${footerContent}
