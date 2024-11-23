@@ -1,27 +1,5 @@
 # Prefácio
 
-- [Prefácio](#prefácio)
-    - [Links para você usar](#links-para-você-usar)
-- [Como surgiu o Rust](#como-surgiu-o-rust)
-- [Pilares do Rust](#pilares-do-rust)
-- [Tipos primitivos:](#tipos-primitivos)
-  - [Escalares (scalar types)](#escalares-scalar-types)
-    - [Tipos:](#tipos)
-  - [Compostos (compound types)](#compostos-compound-types)
-    - [Tipos:](#tipos-1)
-- [Inteiros](#inteiros)
-  - [Signed](#signed)
-  - [Unsigned](#unsigned)
-- [Testando os tipos - ESCALARES](#testando-os-tipos---escalares)
-    - [Floats](#floats)
-    - [Boolean](#boolean)
-    - [Character](#character)
-- [Testando os tipos - COMPOSTOS](#testando-os-tipos---compostos)
-    - [Tuplas](#tuplas)
-    - [Matrizes / Arrays](#matrizes--arrays)
-- [Erros comuns em linguagem de baixo nível](#erros-comuns-em-linguagem-de-baixo-nível)
-    - [Out of Bound Error](#out-of-bound-error)
-
 ### Links para você usar
 
 1. [Rust Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2021) -> Para você pegar o código da documentação e rodar direto no navegador.

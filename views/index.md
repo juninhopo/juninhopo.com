@@ -9,6 +9,6 @@
 
 ## Topics
 
-- [documents](/documents/index)
+- [guides & docs](/guides-&-docs/index)
 - [indications](/indications/index)
 - [projects](/projects/index)
