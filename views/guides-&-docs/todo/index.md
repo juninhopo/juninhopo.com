@@ -2,6 +2,8 @@
 
 ## Doing
 
+- [ ] Finalizar a RFC de PIX
+- [ ] Finalizar o W-CHALLENGE
 - [ ] Estudar sobre [aprender em publico](https://www.swyx.io/learn-in-public)
 - [ ] Entender sobre o relay do graphql
 	- [x] Finalizar esse [video](https://www.youtube.com/watch?v=dsarexwqcjc)
