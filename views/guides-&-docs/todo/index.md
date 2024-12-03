@@ -1,8 +1,11 @@
-# Next To-dos
+# To-dos:
 
 ## Doing
 
 - [ ] Finalizar a RFC de PIX
+  - [ ] [PIX](https://github.com/bacen/pix-api/releases/tag/2.7.0)
+  - [ ] [Regulamentação PIX](https://www.bcb.gov.br/estabilidadefinanceira/pix?modalAberto=regulamentacao_pix)
+  - [ ] [Iniciador para dados sobre pagamentos](https://iniciador.com.br/)
 - [ ] Finalizar o W-CHALLENGE
 - [ ] Estudar sobre [aprender em publico](https://www.swyx.io/learn-in-public)
 - [ ] Entender sobre o relay do graphql
