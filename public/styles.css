@@ -1,8 +1,8 @@
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
   margin: 20px;
-  font-size: 1.4rem;  /* Tamanho reduzido */
-  line-height: 1.6;   /* Ajustei o espaçamento entre as linhas para um melhor ajuste */
+  font-size: 1rem;  /* Tamanho reduzido */
+  line-height: 1.4;   /* Ajustei o espaçamento entre as linhas para um melhor ajuste */
   background-color: #0D1117;
 }
 
