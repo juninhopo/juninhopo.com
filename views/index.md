@@ -3,7 +3,7 @@
 
 - i'm backend, nothing frontend 👨🏻‍💻
 - I'm Darlan, Developer from Brazil, I'm currently working as a Software Engineer for [Woovi](https://woovi.com/).
-- lunarvim ❤️
+- lazyvim ❤️
 - open source beginner
 - [more about me](/me/index)
 
