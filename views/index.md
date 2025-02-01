@@ -1,9 +1,8 @@
 # 🌎 Darlan Jr. | @juninhopo 🌎
 🖇️ [linkedin](https://www.linkedin.com/in/darlan-junior/) | 💻 [github](https://github.com/juninhopo) | 📷 [instagram](https://www.instagram.com/juninhopo/) | 🦜 [x](https://x.com/juninhopo_dev/)
 
-- i'm backend, nothing frontend 👨🏻‍💻
-- I'm Darlan, Developer from Brazil, I'm currently working as a Software Engineer for [Woovi](https://woovi.com/).
-- lazyvim ❤️
+- I'm Darlan, Developer from Brazil, I'm currently working as a Full Stack Developer for [Woovi](https://woovi.com/).
+- vim ❤️
 - open source beginner
 - [more about me](/me/index)
 
