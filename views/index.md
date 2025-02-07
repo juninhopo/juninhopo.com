@@ -9,7 +9,6 @@
 ## Talk to me 
 
 - Is easy, just schedule a meeting here [calendly](https://calendly.com/darlan-entria/30min)
-
 - email: kelgaxd@gmail.com
 
 ## Topics
