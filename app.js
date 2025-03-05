@@ -55,10 +55,10 @@ app.get('*', (req, res) => {
 
     // Extrai o título da primeira linha do arquivo Markdown
     let title = 'index'
-    const lines = data.split('\n')
-    if (lines[0].startsWith('# ')) {
-      title = lines[0].slice(2).trim()
-    }
+    // const lines = data.split('\n')
+    // if (lines[0].startsWith('# ')) {
+    //   title = lines[0].slice(2).trim()
+    // }
 
     // Renderiza o conteúdo Markdown e ajusta os links
     const htmlContent = adjustLinks(md.render(data))
