@@ -4,7 +4,6 @@ const path = require('path')
 const MarkdownIt = require('markdown-it')
 const markdownItCheckbox = require('markdown-it-checkbox');
 
-
 const app = express()
 const md = new MarkdownIt()
 
@@ -54,6 +53,13 @@ app.get('*', (req, res) => {
       return
     }
 
+    // Extrai o título da primeira linha do arquivo Markdown
+    let title = 'index'
+    const lines = data.split('\n')
+    if (lines[0].startsWith('# ')) {
+      title = lines[0].slice(2).trim()
+    }
+
     // Renderiza o conteúdo Markdown e ajusta os links
     const htmlContent = adjustLinks(md.render(data))
 
@@ -91,7 +97,7 @@ app.get('*', (req, res) => {
       <!DOCTYPE html>
       <html>
         <head>
-          <title>${relativePath || 'index'}</title>
+          <title>${title}</title>
           <link rel="stylesheet" href="/styles.css">
           <link rel="icon" type="image/x-icon" href="/favicon.ico" />
         </head>
