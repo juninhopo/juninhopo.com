@@ -1,10 +1,10 @@
 # 🌎 Darlan Jr. | @juninhopo 🌎
 
-## 🖇️ [linkedin](https://www.linkedin.com/in/darlan-junior/) | 💻 [github](https://github.com/juninhopo) | 📷 [instagram](https://www.instagram.com/juninhopo/) | 🦜 [x](https://x.com/juninhopo_dev/)
+## 🖇️ [linkedin](https://www.linkedin.com/in/darlan-junior/) | 💻 [github](https://github.com/juninhopo) | 📷 [instagram](https://www.instagram.com/juninhopo/) | 🦜 [x](https://x.com/juninhopo_dev/) | 📝 [dev.to](https://dev.to/juninhopo)
 
 - I'm Darlan, Developer from Brazil, I'm currently working as a Full Stack Developer for [Woovi](https://woovi.com/).
-- neovim 💚
-- open source beginner
+- lunarvim 💚
+- open source 
 - [more about me](/me/index)
 
 ## Talk to me 
@@ -16,6 +16,7 @@
 
 - 📗 [gastos.club](https://gastos.club/) 🤑
 - 💎 [Uma Letra Joalheria](https://instagram.com/umaletrajoalheria)
+- 🔍 [KYC Check](https://kyc-check-production.up.railway.app/)
 
 ## Topics
 
