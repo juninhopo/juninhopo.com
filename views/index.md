@@ -1,25 +1,35 @@
-# 🌎 Darlan Jr. | @juninhopo 🌎
+# Darlan Jr.
 
-## 🖇️ [linkedin](https://www.linkedin.com/in/darlan-junior/) | 💻 [github](https://github.com/juninhopo) | 📷 [instagram](https://www.instagram.com/juninhopo/) | 🦜 [x](https://x.com/juninhopo_dev/) | 📝 [dev.to](https://dev.to/juninhopo)
+![Darlan Jr.](/image/darlan.png)
 
-- I'm Darlan, Developer from Brazil, I'm currently working as a Full Stack Developer for [Woovi](https://woovi.com/).
-- lunarvim 💚
-- open source 
-- [more about me](/me/index)
+This is the personal website of Darlan Jr. He is a Full Stack Developer from Brazil, currently working at [Woovi](https://woovi.com/). One of his passions is open source software and development tools. He is an active contributor to open source projects and a strong advocate for developer productivity tools.
 
-## Talk to me 
+## Details
 
-- Is easy, just schedule a meeting here [calendly](https://calendly.com/darlan-entria/30min)
-- email: kelgaxd@gmail.com
+* Location: Mato Grosso do Sul, Brazil
+* Timezone: UTC -04:00 (AMT)
+* Email: kelgaxd@gmail.com
+* LinkedIn: [darlan-junior](https://www.linkedin.com/in/darlan-junior/)
+* GitHub: [juninhopo](https://github.com/juninhopo)
+* X (Twitter): [@juninhopo_dev](https://x.com/juninhopo_dev/)
+* Instagram: [@juninhopo](https://www.instagram.com/juninhopo/)
+* Dev.to: [juninhopo](https://dev.to/juninhopo)
 
-## My presence
+## Projects
 
-- 📗 [gastos.club](https://gastos.club/) 🤑
-- 💎 [Uma Letra Joalheria](https://instagram.com/umaletrajoalheria)
-- 🔍 [KYC Check](https://kyc-check-production.up.railway.app/)
+* 📗 [Gastos.club](https://gastos.club/) - Personal finance management
+* 💎 [Uma Letra Joalheria](https://instagram.com/umaletrajoalheria) - Jewelry business
+* 🔍 [KYC Check](https://kyc-check-production.up.railway.app/) - Identity verification tool
 
-## Topics
+## Resources
 
-- [guides & docs 📚](/guides-&-docs/index)
-- [indications 🧭](/indications/index)
-- [projects 🛠️](/projects/index)
+* [Guides & Documentation 📚](https://github.com/juninhopo/codes)
+* [Recommendations 🧭](/indications/index)
+* [Projects 🛠️](/projects/index)
+
+## Contact
+
+Schedule a meeting: [calendly](https://calendly.com/darlan-entria/30min)
+
+* pt-br
+* en

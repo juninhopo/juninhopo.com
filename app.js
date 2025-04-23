@@ -54,7 +54,7 @@ app.get('*', (req, res) => {
     }
 
     // Extrai o título da primeira linha do arquivo Markdown
-    let title = '@juninhopo'
+    let title = 'Darlan Jr.'
     // const lines = data.split('\n')
     // if (lines[0].startsWith('# ')) {
     //   title = lines[0].slice(2).trim()

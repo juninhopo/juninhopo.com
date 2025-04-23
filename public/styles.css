@@ -1,38 +1,38 @@
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
   margin: 20px;
-  font-size: 1rem;  /* Tamanho reduzido */
-  line-height: 1.4;   /* Ajustei o espaçamento entre as linhas para um melhor ajuste */
-  background-color: #0D1117;
+  font-size: 1.4rem;
+  line-height: 1.4;
+  background-color: #FFFFFF;
 }
 
 h1, h2, h3 {
-  color: #FFFFFF;
+  color: #333333;
 }
 
 a {
-  color: #007bff;
+  color: #0066cc;
   text-decoration: none;
 }
 
 p {
-  color: #FFFFFF;
+  color: #333333;
   text-decoration: none; 
 }
 
 li {
-  color: #FFFFFF;
+  color: #333333;
   text-decoration: none; 
 }
 
 /* Estilos para os blocos de código */
 pre {
-  background-color: #1e1e1e;
-  color: #dcdcdc;
+  background-color: #f5f5f5;
+  color: #333333;
   padding: 15px;
   border-radius: 5px;
   overflow-x: auto;
-  font-size: 1rem; /* Tamanho do texto dentro do código */
+  font-size: 1.1rem;
 }
 
 p, pre {
@@ -42,11 +42,11 @@ p, pre {
 
 /* Estilos para código inline */
 code {
-  background-color: #2d2d2d;
-  color: #f8f8f2;
+  background-color: #f0f0f0;
+  color: #333333;
   padding: 2px 5px;
   border-radius: 3px;
-  font-size: 0.9rem; /* Tamanho reduzido para código inline */
+  font-size: 1rem;
 }
 
 /* Estilos para a tabela */
@@ -54,37 +54,37 @@ table {
   width: 100%;
   border-collapse: collapse;
   margin: 20px 0;
-  font-size: 1rem;  /* Tamanho da fonte nas tabelas */
+  font-size: 1.1rem;
 }
 
 /* Estilos para os cabeçalhos da tabela */
 th {
-  background-color: #333;
-  color: #fff;
+  background-color: #f0f0f0;
+  color: #333333;
   padding: 10px;
   text-align: left;
-  border-bottom: 2px solid #444;
-  font-size: 1.1rem;  /* Tamanho reduzido nos cabeçalhos */
+  border-bottom: 2px solid #dddddd;
+  font-size: 1.2rem;
 }
 
 /* Estilos para as células da tabela */
 td {
-  background-color: #222;
-  color: #fff;
+  background-color: #ffffff;
+  color: #333333;
   padding: 10px;
   text-align: left;
-  border-bottom: 1px solid #444;
-  font-size: 1rem;
+  border-bottom: 1px solid #dddddd;
+  font-size: 1.1rem;
 }
 
 /* Estilos para linhas alternadas da tabela */
 tr:nth-child(even) {
-  background-color: #2a2a2a;
+  background-color: #f9f9f9;
 }
 
 /* Estilos para a borda da tabela */
 table, th, td {
-  border: 1px solid #444;
+  border: 1px solid #dddddd;
 }
 
 /* Estilos para os checkboxes */
@@ -100,8 +100,8 @@ li input[type="checkbox"] {
 
 /* Para checkboxes marcados */
 li input[type="checkbox"]:checked {
-  background-color: #007bff;
-  border: 2px solid #007bff;
+  background-color: #0066cc;
+  border: 2px solid #0066cc;
 }
 
 /* Para checkboxes desmarcados */
@@ -112,8 +112,8 @@ li input[type="checkbox"]:not(:checked) {
 
 /* Estilos para os itens de lista */
 li {
-  color: #fff;   /* Cor do texto */
-  font-size: 1.1rem;  /* Ajuste o tamanho da fonte */
+  color: #333333;   /* Alterado de #fff para #333333 */
+  font-size: 1.2rem;
 }
 
 /* Breadcrumbs */
@@ -121,15 +121,15 @@ nav.breadcrumbs {
   display: flex;
   align-items: center;
   gap: 10px;
-  background-color: #161b22;
+  background-color: #f5f5f5;
   padding: 10px 20px;
   border-radius: 5px;
   margin-bottom: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 nav.breadcrumbs a {
-  color: #58a6ff; /* Azul que combina com o tema */
+  color: #0066cc;
   text-decoration: none;
   font-weight: bold;
 }
@@ -139,11 +139,29 @@ nav.breadcrumbs a:hover {
 }
 
 nav.breadcrumbs span {
-  color: #c9d1d9; /* Cor neutra para texto não clicável */
+  color: #666666;
   font-size: 1rem;
 }
 
 nav.breadcrumbs .separator {
-  color: #8b949e; /* Separador com cor discreta */
+  color: #999999;
   font-size: 1.2rem;
+}
+
+/* Profile image styles */
+.profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+/* General image styles */
+img {
+  max-width: 100px;
+  height: auto;
+  border-radius: 50%;
+  display: block;
+  margin: 0;
 }
