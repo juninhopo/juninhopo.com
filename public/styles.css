@@ -159,7 +159,7 @@ nav.breadcrumbs .separator {
 
 /* General image styles */
 img {
-  max-width: 100px;
+  max-width: 200px;
   height: auto;
   border-radius: 50%;
   display: block;
