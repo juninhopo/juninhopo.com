@@ -2,7 +2,7 @@
 
 ![Darlan Jr.](/image/darlan.png)
 
-This is the personal website of Darlan Jr. He is a Full Stack Developer from Brazil, currently working at [Woovi](https://woovi.com/). One of his passions is open source software and development tools. He is an active contributor to open source projects and a strong advocate for developer productivity tools.
+This is the personal website of Darlan Jr. He is a Full Stack Developer from Brazil, currently working at [Woovi](https://woovi.com/). One of his passions is open source software and development tools. He is an active contributor to open source projects and a strong advocate for developer productivity tools. In the past also on a large scale on [Stone / Ton](https://www.ton.com.br/)
 
 ## Details
 
