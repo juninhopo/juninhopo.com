@@ -47,6 +47,10 @@ app.get('*', (req, res) => {
   const fileName = `${relativePath || 'index'}.md`
   const filePath = path.join(__dirname, 'views', fileName)
 
+  if (req.path === '/guides-&-docs/white-page-for-meeting/index') {
+    return res.sendFile(path.join(__dirname, 'views', 'guides-&-docs', 'white-page-for-meeting', 'index.html'))
+  }
+
   fs.readFile(filePath, 'utf8', (err, data) => {
     if (err) {
       res.status(404).send('Arquivo Markdown não encontrado.')
