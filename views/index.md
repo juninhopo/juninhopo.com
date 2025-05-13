@@ -21,7 +21,7 @@ This is the personal website of Darlan Jr. He is a Full Stack Developer from Bra
 - 📗 [Gastos.club](https://gastos.club/) - Personal finance management
 - 💎 [Uma Letra Joalheria](https://instagram.com/umaletrajoalheria) - Jewelry business
 - 🔍 [KYC Check](https://kyc-check-production.up.railway.app/) - Identity verification tool
-- 📱 [Github Issues on Neovim](https://github.com/juninhopo/issues-neovim/) -
+- 📱 [Github Issues on Neovim](https://github.com/juninhopo/issues-neovim/) - Neovim plugin for Github Issues
 
 ## Resources
 
