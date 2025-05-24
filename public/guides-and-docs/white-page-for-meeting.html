@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>White Page for Meeting</title>
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       padding: 0;
@@ -12,16 +18,27 @@
       height: 100vh;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: center;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
+      font-family: Georgia, serif;
+      position: relative;
+      overflow: hidden;
     }
     
     .controls {
-      margin-bottom: 30px;
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 100;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     }
     
     .btn {
+      font-family: Georgia, serif;
       background-color: #f5f5f5;
       border: 1px solid #ddd;
       padding: 10px 20px;
@@ -29,6 +46,8 @@
       cursor: pointer;
       font-size: 16px;
       margin: 0 8px;
+      transition: all 0.2s ease;
+      color: #333;
     }
     
     .btn:hover {
@@ -36,38 +55,129 @@
     }
     
     .home-link {
-      margin-top: 30px;
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      z-index: 100;
     }
     
     a {
-      color: #0366d6;
+      font-family: Georgia, serif;
+      color: #0066cc;
       text-decoration: none;
       font-size: 16px;
+      opacity: 0.7;
+      transition: opacity 0.2s ease;
     }
     
     a:hover {
       text-decoration: underline;
+      opacity: 1;
+    }
+
+    .meet-guide {
+      width: 320px;
+      height: 180px;
+      border: 2px dashed #ccc;
+      border-radius: 8px;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #666;
+      font-size: 14px;
+      font-family: Georgia, serif;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(5px);
+      opacity: 0.5;
+      transition: opacity 0.3s ease;
+    }
+
+    .meet-guide:hover {
+      opacity: 1;
+    }
+
+    .meet-guide::after {
+      content: "Posicione a janela do Google Meet aqui";
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      bottom: -30px;
+      font-size: 12px;
+      font-family: Georgia, serif;
+      color: #666;
+    }
+
+    .instructions {
+      position: fixed;
+      top: 80%;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      color: #666;
+      font-size: 14px;
+      font-family: Georgia, serif;
+      opacity: 0.7;
+      pointer-events: none;
+      white-space: nowrap;
+    }
+
+    @media (max-width: 768px) {
+      .meet-guide {
+        width: 240px;
+        height: 135px;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="controls">
-    <button class="btn" onclick="adjustBrightness(-10)">Darker</button>
-    <button class="btn" onclick="adjustBrightness(10)">Brighter</button>
+  <div class="home-link">
+    <a href="/">« Back to home</a>
+  </div>
+
+  <div class="meet-guide">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="#666">
+      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14h2v2h-2v-2zm0-10h2v8h-2V6z"/>
+    </svg>
+  </div>
+
+  <div class="instructions">
+    Posicione a janela do Google Meet no centro da tela
   </div>
   
-  <div class="home-link">
-    <a href="/">← Back to Home</a>
+  <div class="controls">
+    <button class="btn" onclick="adjustBrightness(-10)">Escurecer</button>
+    <button class="btn" onclick="adjustBrightness(10)">Clarear</button>
+    <button class="btn" onclick="toggleGuide()">Guia</button>
   </div>
   
   <script>
-    // Start with white (brightness 100)
     let brightness = 100;
+    let guideVisible = true;
     
     function adjustBrightness(delta) {
       brightness = Math.max(0, Math.min(100, brightness + delta));
       document.body.style.backgroundColor = `rgb(${brightness*2.55}, ${brightness*2.55}, ${brightness*2.55})`;
     }
+
+    function toggleGuide() {
+      const guide = document.querySelector('.meet-guide');
+      const instructions = document.querySelector('.instructions');
+      guideVisible = !guideVisible;
+      guide.style.display = guideVisible ? 'flex' : 'none';
+      instructions.style.display = guideVisible ? 'block' : 'none';
+    }
+
+    // Esconder guias após 5 segundos
+    setTimeout(() => {
+      const guide = document.querySelector('.meet-guide');
+      const instructions = document.querySelector('.instructions');
+      guide.style.opacity = '0.2';
+      instructions.style.opacity = '0.2';
+    }, 5000);
   </script>
 </body>
 </html> 
