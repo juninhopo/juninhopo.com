@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
 });
 
 // Handle 404s - serve index.html and let the client-side routing handle it
-app.get('*', (req, res) => {
+app.get('{*path}', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
